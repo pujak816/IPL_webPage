@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/45c7b97df8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <div id="logo">
+          <img
+            src="	https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+            alt="ipl-logo"
+            width="100px"
+          />
+        </div>
+        <div class="nav">
+          <a class="navitems" href="./index.html">Home</a>
+          <a class="navitems" href="#home-page-display">Teams</a>
+          <a class="navitems" href="#">Contact Us</a>
+          <a class="navitems" href="#">About Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="home_page">
+      <div class="home-page-topbar">
+        <!-- search wrapper -->
+        <div id="serach-wrapper">
+          <h1>Indian Premier League (IPL)</h1>
+          <div id="search-players">
+            <a href="" target="_blank" hidden></a>
+            <div class="search_input">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="search players by team code" />
+            </div>
+            <div class="output-box"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- cards section -->
+      <div id="home-page-display">
+        <h2 id="home-page-heading">IPL TEAMS</h2>
+        <div id="add-team">
+          <button id="homeButton" onclick="addTeamform();">Add Team</button>
+          <form class="teamForm">
+            <h2>Add Team Details</h2>
+            <div>
+              <input type="text" placeholder="Enter Team Name" id="team_name" />
+              <input type="text" placeholder="Enter Team ID" id="team_id" />
+              <input
+                type="text"
+                placeholder="Enter Team Top Batsman"
+                id="team_topBatsman"
+              />
+              <input
+                type="text"
+                placeholder="Enter Team Top Bolwer"
+                id="team_topBowler"
+              />
+              <input
+                type="text"
+                placeholder="Championship Won Count"
+                id="team_championshipWon"
+              />
+              <input
+                type="text"
+                placeholder="Enter Team Icon URL"
+                id="team_icon"
+              />
+            </div>
+            <button id="submitTeam_button">Submit</button>
+          </form>
+        </div>
+
+        <div class="home-page-team-container"></div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-sections">
+          <p>ABOUT</p>
+          <ul>
+            <li class="footer_list"><a href="#">About Us</a></li>
+            <li class="footer_list"><a href="#">Anti Corruption Policy</a></li>
+            <li class="footer_list"><a href="#">Anti Doping Policy</a></li>
+            <li class="footer_list">
+              <a href="#">Clothing And Equipment Regulations</a>
+            </li>
+            <li class="footer_list"><a href="#">Image Use Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <p>GUIDLINES</p>
+          <ul>
+            <li class="footer_list">
+              <a href="#">IPL Code Of Conduct For Match Officials</a>
+            </li>
+            <li class="footer_list">
+              <a href="#">Brand And Protection Guidelines</a>
+            </li>
+            <li class="footer_list">
+              <a href="#">Match Playing Conditions</a>
+            </li>
+            <li class="footer_list"><a href="#">Governing Council</a></li>
+            <li class="footer_list"><a href="#">Suspect Action Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <p>CONTACT</p>
+          <ul>
+            <li class="footer_list"><a href="#">Contact Us</a></li>
+            <li class="footer_list"><a href="#">Sponsorship</a></li>
+            <li class="footer_list"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- script files -->
+    <script src="./index.js"></script>
+  </body>
+</html>

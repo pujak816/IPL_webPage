@@ -1,0 +1,482 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto+Mono&family=Source+Sans+Pro:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: linear-gradient(90deg, #e5e0ff, #8ea7e9);
+}
+
+/* header */
+header {
+  padding: 5px;
+  width: 100%;
+  background: linear-gradient(
+    92.04deg,
+    #222268 24.18%,
+    #19398a 50.95%,
+    #0f0f34 110.32%
+  );
+  box-shadow: #807272 0 4px 9px;
+  position: fixed;
+}
+header div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.nav {
+  justify-content: space-around;
+}
+.navitems {
+  text-decoration: none;
+  color: #f1f3f5;
+  font-weight: 600;
+  font-size: 17px;
+  padding-left: 20px;
+}
+.navitems:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+/* home page style */
+
+main {
+  padding-top: 8%;
+}
+
+/* search wrapper */
+#serach-wrapper {
+  background-color: #ece8ff;
+  width: 80%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 35px 15px;
+}
+#serach-wrapper h1 {
+  text-align: center;
+  color: #12275f;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+#search-players {
+  padding: 12px;
+}
+/* #search-players button {
+  background-color: #ec5c3f;
+  color: white;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: white;
+} */
+.search_input {
+  background-color: #f8f8f8;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+#search-players input {
+  width: 60%;
+  margin-top: 15px;
+  border: none;
+  padding: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+/* search output */
+.output-box {
+  border-radius: 30px;
+  background-color: #ece8ff;
+  padding: 15px;
+  visibility: hidden;
+  color: #072a6b;
+  font-weight: 600;
+}
+.output-box li {
+  list-style: none;
+  background-color: #ffffff;
+  color: #103183;
+  width: 60%;
+  margin: auto;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 10px;
+  margin-bottom: 4px;
+  text-align: center;
+}
+
+/* home page cards section */
+.home_page {
+  background-image: linear-gradient(
+      65deg,
+      rgba(116, 122, 141, 0.83) 35%,
+      rgba(145, 159, 198, 0.28) 65%
+    ),
+    url(https://cdn.wisden.com/wp-content/uploads/2023/03/Gayle-980x530.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+}
+#home-page-display {
+  padding: 5%;
+}
+
+#home-page-heading {
+  font-size: 50px;
+  font-weight: 900;
+  color: #fbfcfd;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+#add-team {
+  padding-left: 15%;
+}
+#add-team button {
+  background-color: #ec5c3f;
+  color: white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 6px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border-color: white;
+}
+#add-team button:hover {
+  background-color: white;
+  color: #ec5c3f;
+}
+.home-page-team-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 22px;
+  width: 100%;
+  justify-content: center;
+}
+.home-page-team-card {
+  margin: 25px;
+  padding: 45px 30px;
+  border-radius: 10px;
+  max-width: 240px;
+}
+.home-page-team-card:hover {
+  transform: scale(1.1);
+}
+.home-page-team-card a,
+.teams_playerCard a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.team-card-content h3 {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.team-card-logo {
+  width: 170px;
+  height: auto;
+  margin: 0;
+}
+.team-card-logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ------teams page style----------------- */
+
+#teams_homepage {
+  padding-top: 5%;
+}
+#teams_page_heading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  background-image: url(https://drop.ndtv.com/homepage/ndtv_sports/images/ipl.png);
+  color: #fff;
+  padding: 15px;
+}
+.teams-wrapper {
+  /* background-color: #f4e6e6; */
+  background-image: linear-gradient(
+      76deg,
+      rgba(204, 207, 219, 0.83) 35%,
+      rgba(210, 216, 233, 0.28) 65%
+    ),
+    url(https://circleofcricket.com/post_image/post_image_48d6b24.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+}
+
+.teams_info_content {
+  background-image: linear-gradient(65deg, #b1bdde 35%, #337cc5 65%);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 15px;
+}
+.teams_left {
+  padding-top: 20px;
+}
+.teams_logo {
+  width: 170px;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+}
+.teams_logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.teams_right {
+  padding: 17px 0 10px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.teams_right span {
+  color: #072a6b;
+  font-weight: 600;
+  line-height: 25px;
+}
+.teams_Name {
+  padding-bottom: 14px;
+  font-size: 40px;
+}
+.teams_right h2,
+.teams_right p {
+  color: #fff;
+}
+
+/* teams-player card  */
+
+.teams_innerBox_playerCards {
+  padding: 4% 0;
+}
+.teams_card-section_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 7%;
+}
+.teams_card-section_header p {
+  font-size: 40px;
+  font-weight: 900;
+  color: #12275f;
+}
+.teams_card-section_header button {
+  background-color: #ec5c3f;
+  color: white;
+  border-radius: 13px;
+  margin: 8px;
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+}
+.teams_card-section_header button:hover {
+  background-color: white;
+  color: #ec5c3f;
+}
+.teams_cards_div {
+  padding: 2% 0;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+.teams_playerCard a {
+  font-size: 15px;
+}
+.teams_players_wrapper {
+  background: linear-gradient(180deg, #ea7175 10%, #e70808 90%);
+  border: 2px solid #84171b;
+  width: calc(20% - 16px);
+  border: 3.65202px solid #becce2;
+  box-sizing: border-box;
+  border-radius: 10.2227px;
+  margin: 10px 15px;
+}
+.teams_players_wrapper:hover {
+  transform: scale(1.1);
+}
+
+.teams_player-img img {
+  width: 100%;
+  margin: auto;
+}
+.teams_player-details {
+  text-align: center;
+  padding: 11px 0;
+  background-color: #f38989;
+  color: #275ab9;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+.teams_player-details h3 {
+  color: #072a6b;
+  font-weight: 800;
+  font-size: 19px;
+}
+.teams_player-details span {
+  color: #08202d;
+  font-weight: 900;
+}
+.teams_playerInfo {
+  color: #0f0f34;
+  font-weight: 900;
+  padding: 5px 0;
+  background-color: #324d97;
+  margin: 7px 0;
+}
+.teams_playerInfo span {
+  color: #d4afaf;
+}
+
+/*--------------- players page style-----------------> */
+
+.players_page_section {
+  background-image: linear-gradient(
+      120deg,
+      rgba(204, 207, 219, 0.83) 35%,
+      rgb(220, 220, 235) 65%
+    ),
+    url(https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/08/07/917968-ipl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll, fixed;
+  height: 100vh;
+}
+.players_page_main {
+  margin: 7% 3%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 10%;
+}
+
+.players_left_section {
+  max-width: 360px;
+  margin: 0;
+  background-color: #072a6b;
+  border-radius: 100%;
+}
+.players_left_section:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.players_left_section img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.players_right_section {
+  padding: 5% 2%;
+}
+.players_right_section:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.player-details {
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.player-details h3 {
+  text-align: center;
+  font-size: 40px;
+}
+.playerInfo {
+  padding-top: 20px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #12275f;
+}
+.playerInfo_teamName {
+  color: #ec5c3f;
+  padding-bottom: 15px;
+}
+.player-details span {
+  color: #275ab9;
+}
+
+/* footer */
+footer {
+  background: linear-gradient(
+    92.04deg,
+    #222268 24.18%,
+    #19398a 50.95%,
+    #0f0f34 110.32%
+  );
+  padding: 38px 0 40px;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+}
+.footer-sections {
+  text-align: left;
+  float: left;
+  width: 20%;
+}
+.footer-sections p {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.footer-sections ul {
+  padding: 0;
+}
+.footer_list {
+  list-style: none;
+  margin-bottom: 8px;
+}
+.footer_list a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* add team and player form */
+
+.teamForm,
+.playerForm {
+  background-color: rgba(245, 245, 245, 0.899);
+  box-shadow: #081122 10px 10px 28px 3px;
+  width: 60%;
+  margin: auto;
+  padding: 60px 40px 20px;
+  border-radius: 10px;
+  visibility: hidden;
+  text-align: center;
+  position: absolute;
+  left: 20%;
+  border: 4px solid #6782b3;
+  /* z-index: 1; */
+}
+.teamForm h2,
+.playerForm h2 {
+  text-align: center;
+  color: #072a6b;
+  margin-bottom: 20px;
+  font-size: 34px;
+}
+.teamForm input,
+.playerForm input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 7px;
+}

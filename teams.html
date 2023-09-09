@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <div id="logo">
+          <img
+            src="	https://www.iplt20.com/assets/images/ipl-logo-new-old.png"
+            alt="ipl-logo"
+            width="100px"
+          />
+        </div>
+        <div class="nav">
+          <a class="navitems" href="./index.html">Home</a>
+          <a class="navitems" href="./index.html#home-page-display">Teams</a>
+          <a class="navitems" href="#">Contact Us</a>
+          <a class="navitems" href="#">About Us</a>
+        </div>
+      </div>
+    </header>
+    <main id="teams_homepage">
+      <p id="teams_page_heading">Indian Premier League (IPL)</p>
+      <div class="teams-wrapper">
+        <div class="teams_innerBox_Info">
+          <div class="teams_info_content"></div>
+        </div>
+        <div class="teams_innerBox_playerCards">
+          <div class="teams_card-section_header">
+            <p>IPL SQUAD</p>
+            <div id="add_player">
+              <button id="add_player" onclick="addPlayer();">Add Player</button>
+              <form class="playerForm">
+                <h2>Add Team Details</h2>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Enter Player Name"
+                    id="player_name"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter Player Image URL"
+                    id="player_imgUrl"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter Player Team Name"
+                    id="player_teamName"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter Player Team Code"
+                    id="player_teamCode"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Enter Player Role"
+                    id="player_role"
+                  />
+                  <input
+                    type="number"
+                    placeholder="Enter Player Price"
+                    id="player_price"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Playing Status"
+                    id="player_isPlaying"
+                  />
+                </div>
+                <button id="submitPlayerButton">Submit</button>
+              </form>
+            </div>
+          </div>
+          <div class="teams_cards_div"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-sections">
+          <p>ABOUT</p>
+          <ul>
+            <li class="footer_list"><a href="#">About Us</a></li>
+            <li class="footer_list"><a href="#">Anti Corruption Policy</a></li>
+            <li class="footer_list"><a href="#">Anti Doping Policy</a></li>
+            <li class="footer_list">
+              <a href="#">Clothing And Equipment Regulations</a>
+            </li>
+            <li class="footer_list"><a href="#">Image Use Terms</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <p>GUIDLINES</p>
+          <ul>
+            <li class="footer_list">
+              <a href="#">IPL Code Of Conduct For Match Officials</a>
+            </li>
+            <li class="footer_list">
+              <a href="#">Brand And Protection Guidelines</a>
+            </li>
+            <li class="footer_list">
+              <a href="#">Match Playing Conditions</a>
+            </li>
+            <li class="footer_list"><a href="#">Governing Council</a></li>
+            <li class="footer_list"><a href="#">Suspect Action Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-sections">
+          <p>CONTACT</p>
+          <ul>
+            <li class="footer_list"><a href="#">Contact Us</a></li>
+            <li class="footer_list"><a href="#">Sponsorship</a></li>
+            <li class="footer_list"><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./teams.js"></script>
+  </body>
+</html>
